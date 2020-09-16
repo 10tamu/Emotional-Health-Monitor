@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:padding="10dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/read_frequency_back"
+    tools:context="MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Set bio signals reading frequency"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Frequency (seconds)"
+        android:textColor="#66ccff" />
+
+    <EditText
+        android:id="@+id/readFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:layout_margin="5dp"
+        android:hint="Value in seconds">
+    </EditText>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/readFrequencySave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_dark_background"
+            android:text="Save"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/readFrequencyCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_dark_background"
+            android:text="Cancel"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
